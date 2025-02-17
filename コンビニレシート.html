@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>コンビニレシート</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .receipt {
+            width: 320px;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header,
+        .footer,
+        .campaign {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .header p,
+        .footer p,
+        .campaign p,
+        .info p {
+            margin: 2px 0;
+            font-size: 0.9em;
+        }
+
+        .items {
+            border-top: 1px dashed #000;
+            border-bottom: 1px dashed #000;
+            padding: 5px 0;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3px;
+            font-size: 0.9em;
+        }
+
+        .separator {
+            border-top: 1px solid #ccc;
+            margin: 5px 0;
+        }
+
+        .total,
+        .tax,
+        .points {
+            font-weight: bold;
+            font-size: 1em;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .campaign {
+            background-color: #fffbcc;
+            border: 1px dashed #f39c12;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .qr-code {
+            margin: 10px auto;
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: block;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="receipt">
+        <!-- ヘッダー部分 -->
+        <div class="header">
+            <h2>コンビニエンスストア サンプル店</h2>
+            <p>〒123-4567 東京都新宿区西新宿1-1-1</p>
+            <p>電話: 03-1234-5678</p>
+            <p>2025/02/12 12:34</p>
+        </div>
+
+        <!-- キャンペーン情報 -->
+        <div class="campaign">
+            <p>【本日限定キャンペーン】</p>
+            <p>全商品5%オフ！</p>
+            <p>ポイント2倍キャンペーン実施中</p>
+        </div>
+
+        <!-- 商品リスト -->
+        <div class="items">
+            <div class="item">
+                <span>商品A</span>
+                <span>¥100</span>
+            </div>
+            <div class="item">
+                <span>商品B</span>
+                <span>¥200</span>
+            </div>
+            <div class="item">
+                <span>商品C</span>
+                <span>¥150</span>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <span>割引 (5% off)</span>
+                <span>-¥23</span>
+            </div>
+        </div>
+
+        <!-- 小計・税・合計 -->
+        <div class="total">
+            <span>小計</span>
+            <span>¥447</span>
+        </div>
+        <div class="tax">
+            <span>消費税 (10%)</span>
+            <span>¥44</span>
+        </div>
+        <div class="separator"></div>
+        <div class="total">
+            <span>合計</span>
+            <span>¥491</span>
+        </div>
+
+        <!-- ポイント情報 -->
+        <div class="points">
+            <span>獲得ポイント</span>
+            <span>+20P</span>
+        </div>
+
+        <!-- フッター -->
+        <div class="footer">
+            <p>ご利用ありがとうございました！</p>
+            <p>またのお越しをお待ちしております</p>
+        </div>
+
+        <!-- QRコードとレシート情報 -->
+        <div class="info">
+            <p>レシート番号: 1234567890</p>
+            <p>次回のご来店で割引クーポンを進呈</p>
+        </div>
+    </div>
+</body>
+
+</html>
