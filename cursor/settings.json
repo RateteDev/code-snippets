@@ -1,0 +1,84 @@
+{
+    // = = = = = = = = = = = = = = = = = = = = //
+    // UI
+    // = = = = = = = = = = = = = = = = = = = = //
+    // フォントサイズ
+    "editor.fontSize": 17,
+    // フォントの指定
+    "editor.fontFamily": "'PlemolJP', 'Consolas', 'Courier New', 'monospace'",
+    // カラーテーマ
+    "workbench.colorTheme": "Default Dark Modern",
+    // アイコンのテーマ (https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    "workbench.iconTheme": "material-icon-theme",
+    // ファイル削除の警告
+    "explorer.confirmDelete": false,
+    // ドラッグ&ドロップでファイルを移動させるときの警告
+    "explorer.confirmDragAndDrop": false,
+    // ネイティブなファイル貼り付けの警告
+    "explorer.confirmPasteNative": false,
+    // 左側にあるツールバーの並べ方(vertical or horizontal)
+    "workbench.activityBar.orientation": "vertical",
+    // スコープのトップをプレビュー表示
+    "editor.stickyScroll.enabled": false,
+    // = = = = = = = = = = = = = = = = = = = = //
+    // Format関連 ⚠️チーム開発のときは注意⚠️
+    // = = = = = = = = = = = = = = = = = = = = //
+    // タブサイズを4に
+    "editor.tabSize": 4,
+    // ファイルの既存のインデントを無視する
+    "editor.detectIndentation": false,
+    // タブの代わりにスペースを使用
+    "editor.insertSpaces": true,
+    // 保存したときに自動整形
+    "editor.formatOnSave": true,
+    // 貼り付け時に自動整形
+    "editor.formatOnPaste": true,
+    // 末尾に改行を挿入
+    "files.insertFinalNewline": true,
+    // 末尾の空白をトリム
+    "files.trimTrailingWhitespace": true,
+    // = = = = = = = = = = = = = = = = = = = = //
+    // Language global
+    // = = = = = = = = = = = = = = = = = = = = //
+    "editor.indentSize": 4,
+    "editor.renderWhitespace": "all", // 空白文字の可視化
+    // = = = = = = = = = = = = = = = = = = = = //
+    // TypeScript
+    // = = = = = = = = = = = = = = = = = = = = //
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+    // ファイル移動したときにimportの更新を行うか
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // = = = = = = = = = = = = = = = = = = = = //
+    // JSON
+    // = = = = = = = = = = = = = = = = = = = = //
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+    // = = = = = = = = = = = = = = = = = = = = //
+    // Python
+    // = = = = = = = = = = = = = = = = = = = = //
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+    // = = = = = = = = = = = = = = = = = = = = //
+    // Cursor
+    // = = = = = = = = = = = = = = = = = = = = //
+    // workspaceのコピーを裏で作成する(質が向上するかも？ただし、メモリ使用量が増加する)
+    "cursor.general.enableShadowWorkspace": true,
+    // インラインの差分表示（コードの変更箇所）に、現在のテーマに合わせた背景色を使用
+    "cursor.cmdk.useThemedDiffBackground": true,
+    // = = = = = = = = = = = = = = = = = = = = //
+    // CodeSnap
+    // = = = = = = = = = = = = = = = = = = = = //
+    "codesnap.boxShadow": "",
+    "codesnap.containerPadding": "",
+    "codesnap.transparentBackground": true,
+    // = = = = = = = = = = = = = = = = = = = = //
+    // 追加分
+    // = = = = = = = = = = = = = = = = = = = = //
+}
