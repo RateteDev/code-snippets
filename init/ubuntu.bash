@@ -25,6 +25,20 @@ sudo apt install gh -y
 sudo apt install unzip -y
 # treeコマンドをインストール（ディレクトリ構造をツリー表示する）
 sudo apt install tree -y
+
+# Node <https://nodejs.org/ja/download>
+# nvmをダウンロードしてインストールする：
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+# Node.jsをダウンロードしてインストールする：
+nvm install 22
+# Node.jsのバージョンを確認する：
+node -v # "v22.14.0"が表示される。
+nvm current # "v22.14.0"が表示される。
+# pnpmをダウンロードしてインストールする：
+corepack enable pnpm
+# pnpmのバージョンを確認する：
+pnpm -v
+
 # Bunをインストール（Node.jsの代替ランタイム）
 curl -fsSL https://bun.sh/install | bash
 # uvをインストール（Pythonのパッケージマネージャー）
