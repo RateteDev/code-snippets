@@ -82,3 +82,13 @@ winget install -e --id EpicGames.EpicGamesLauncher
 # OBS Studio
 winget install -e --id OBSProject.OBSStudio
 ```
+
+## メモ
+### タスクバーの並び
+左から
+1. Terminal
+2. Explorer
+3. Browser
+4. Text Editor
+5. Message App
+になるようにする。
