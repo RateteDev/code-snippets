@@ -5,23 +5,19 @@
 ### Windows 11 Home／ProをMicrosoftアカウントではなくローカルアカウントで設定する方法
 Windows 11のセットアップ時にMicrosoftアカウントを使わずにローカルアカウントで設定する方法を事前に確認しておく。
 
-参考記事:  
+参考記事:
 [Windows 11 Home／ProをMicrosoftアカウントではなくローカルアカウントで設定する裏技](https://atmarkit.itmedia.co.jp/ait/spv/2210/21/news023.html)
 
 ## UI
-
 ### 1. 隠しファイル・拡張子の表示
-
 ```powershell
 # 隠しファイルを表示する
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name Hidden -Value 1
 # 拡張子を表示する
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name HideFileExt -Value 0
-
 ```
 
 ### 2. ダークモードに変更
-
 ```powershell
 # アプリのテーマをダークモードにする
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name AppsUseLightTheme -Value 0 -Type DWord -Force
@@ -35,8 +31,13 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\P
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name TaskbarAl -Value 0 -Type DWord -Force
 ```
 
-### 4. エクスプローラーを再起動
+### 4. 「「この写真に関する詳細情報」を消す
+```powershell
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{2cc5ca98-6485-489a-920e-b3e88a6ccce3}" /t REG_DWORD /d 1 /f
+```
+参考: [【Windows】ロック画面のトリビアやヒント、画像情報を消す方法 | 50歳からでもよくわかるガジェットの話]<https://50it.jeez.jp/archives/1585>
 
+### 5. エクスプローラーを再起動
 ```powershell
 # タスクバーを再起動して適用
 Stop-Process -Name explorer -Force
@@ -53,34 +54,42 @@ Stop-Process -Name explorer -Force
 Ubuntu内の処理について同一階層の`ubuntu.bash`を参照
 
 ## 3. Windows Software
-
-```bash
+### 管理者権限で実行
+```powershell
 # Vivaldi
-winget install --id=Vivaldi.Vivaldi -e
+winget install -e --id=Vivaldi.Vivaldi
 # Discord
-winget install --id=Discord.Discord -e
+winget install -e --id=Discord.Discord
 # Steam
-winget install --id=Valve.Steam -e
-# Spotify
-winget install --id=Spotify.Spotify -e
+winget install -e --id=Valve.Steam
 # ChatGPT
-winget install --id=9NT1R1C2HH7J -e
+winget install -e --id=9NT1R1C2HH7J
+# Anthropic Claude
+winget install -e --id=Anthropic.Claude
 # Google Chrome
-winget install --id=Google.Chrome -e
+winget install -e --id=Google.Chrome
 # Cursor(Text Editor)
-winget install --id=Anysphere.Cursor -e
+winget install -e --id=Anysphere.Cursor
 # PowerToys
-winget install --id=Microsoft.PowerToys -e
+winget install -e --id=Microsoft.PowerToys
 # 1Password
-winget install --id=AgileBits.1Password -e
+winget install -e --id=AgileBits.1Password
 # 7zip
-winget install --id=7zip.7zip -e
+winget install -e --id=7zip.7zip
 # Notion
-winget install --id=Notion.Notion -e
+winget install -e --id=Notion.Notion
 # Epic Games Launcher
 winget install -e --id EpicGames.EpicGamesLauncher
 # OBS Studio
 winget install -e --id OBSProject.OBSStudio
+# AutoHotkey
+winget install -e --id=AutoHotkey.AutoHotkey
+```
+
+### 管理者権限ナシで実行
+```powershell
+# Spotify
+winget install -e --id=Spotify.Spotify
 ```
 
 ## メモ
