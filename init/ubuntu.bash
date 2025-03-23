@@ -25,6 +25,8 @@ sudo apt install gh -y
 sudo apt install unzip -y
 # treeコマンドをインストール（ディレクトリ構造をツリー表示する）
 sudo apt install tree -y
+# 開発ツール一式とGCCをインストール（コンパイラとビルドツール）
+sudo apt install build-essential -y
 
 # Node <https://nodejs.org/ja/download>
 # nvmをダウンロードしてインストールする：
