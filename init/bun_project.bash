@@ -13,7 +13,7 @@ echo "LOG_LEVEL=INFO" > .env
 git init
 
 # 必要なディレクトリを作成
-mkdir -p docs assets scripts data
+mkdir -p doc asset script data test
 
 # README.mdを作成
 echo "# TODO: Replace Your Project Name" > README.md
