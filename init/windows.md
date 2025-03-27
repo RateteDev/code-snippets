@@ -84,6 +84,8 @@ winget install -e --id EpicGames.EpicGamesLauncher
 winget install -e --id OBSProject.OBSStudio
 # AutoHotkey
 winget install -e --id=AutoHotkey.AutoHotkey
+# Git
+winget install -e --id Git.Git
 # GitHub CLI
 winget install -e --id GitHub.cli
 # nvm
