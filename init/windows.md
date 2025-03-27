@@ -84,6 +84,10 @@ winget install -e --id EpicGames.EpicGamesLauncher
 winget install -e --id OBSProject.OBSStudio
 # AutoHotkey
 winget install -e --id=AutoHotkey.AutoHotkey
+# GitHub CLI
+winget install -e --id GitHub.cli
+# nvm
+winget install -e --id CoreyButler.NVMforWindows
 ```
 
 ### 管理者権限ナシで実行
