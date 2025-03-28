@@ -90,6 +90,8 @@ winget install -e --id Git.Git
 winget install -e --id GitHub.cli
 # nvm
 winget install -e --id CoreyButler.NVMforWindows
+# Meta Quest Link
+winget install --id=Meta.Oculus  -e
 ```
 
 ### 管理者権限ナシで実行
