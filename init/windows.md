@@ -95,7 +95,7 @@ winget install -e --id=Meta.Oculus
 # Snipping Tool
 winget install -e --id=9MZ95KL8MR0L
 # Gimp
-winget install -e --id GIMP.GIMP
+winget install -e --id 9PNSJCLXDZ0V
 ```
 
 ### 管理者権限ナシで実行
