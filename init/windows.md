@@ -91,7 +91,9 @@ winget install -e --id GitHub.cli
 # nvm
 winget install -e --id CoreyButler.NVMforWindows
 # Meta Quest Link
-winget install --id=Meta.Oculus  -e
+winget install -e --id=Meta.Oculus
+# Snipping Tool
+winget install -e --id=9MZ95KL8MR0L
 ```
 
 ### 管理者権限ナシで実行
