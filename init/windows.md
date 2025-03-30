@@ -94,6 +94,8 @@ winget install -e --id CoreyButler.NVMforWindows
 winget install -e --id=Meta.Oculus
 # Snipping Tool
 winget install -e --id=9MZ95KL8MR0L
+# Gimp
+winget install -e --id GIMP.GIMP
 ```
 
 ### 管理者権限ナシで実行
