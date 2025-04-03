@@ -62,6 +62,8 @@ winget install -e --id=Vivaldi.Vivaldi
 winget install -e --id=Discord.Discord
 # Steam
 winget install -e --id=Valve.Steam
+# DeepL
+winget install -e --id DeepL.DeepL
 # ChatGPT
 winget install -e --id=9NT1R1C2HH7J
 # Anthropic Claude
@@ -96,6 +98,8 @@ winget install -e --id=Meta.Oculus
 winget install -e --id=9MZ95KL8MR0L
 # Gimp
 winget install -e --id 9PNSJCLXDZ0V
+# Paint(MS Store)
+winget install -e --id 9PCFS5B6T72H
 ```
 
 ### 管理者権限ナシで実行
