@@ -98,8 +98,10 @@ winget install -e --id=Meta.Oculus
 winget install -e --id=9MZ95KL8MR0L
 # Gimp
 winget install -e --id 9PNSJCLXDZ0V
-# Paint(MS Store)
+# Paint
 winget install -e --id 9PCFS5B6T72H
+# LINE Desktop
+winget install -e --id XPFCC4CD725961
 ```
 
 ### 管理者権限ナシで実行
