@@ -21,6 +21,9 @@ mkdir -p ~/workspace/Project ~/workspace/Handson
 sudo apt install git -y
 # GitHub CLIをインストール
 sudo apt install gh -y
+# ngrokをインストール
+sudo snap install ngrok
+
 # unzipをインストール（ZIPファイルを解凍するため）
 sudo apt install unzip -y
 # treeコマンドをインストール（ディレクトリ構造をツリー表示する）
