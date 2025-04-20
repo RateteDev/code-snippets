@@ -102,6 +102,8 @@ winget install -e --id 9PNSJCLXDZ0V
 winget install -e --id 9PCFS5B6T72H
 # LINE Desktop
 winget install -e --id XPFCC4CD725961
+# Docker CLI
+winget install -e --id=Docker.DockerCLI
 ```
 
 ### 管理者権限ナシで実行
