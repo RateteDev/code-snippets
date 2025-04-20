@@ -104,6 +104,8 @@ winget install -e --id 9PCFS5B6T72H
 winget install -e --id XPFCC4CD725961
 # Docker CLI
 winget install -e --id=Docker.DockerCLI
+# LiveSplit
+winget install -e --id=LiveSplit.LiveSplit
 ```
 
 ### 管理者権限ナシで実行
