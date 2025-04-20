@@ -48,9 +48,12 @@ pnpm -v
 
 # Bunをインストール（Node.jsの代替ランタイム）
 curl -fsSL https://bun.sh/install | bash
+
 # uvをインストール（Pythonのパッケージマネージャー）
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
+# GO
+sudo apt install golang-go
 # = = = = = = = = = =
 # Settings
 # = = = = = = = = = =
