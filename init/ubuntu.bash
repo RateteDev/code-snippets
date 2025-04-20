@@ -30,6 +30,8 @@ sudo apt install unzip -y
 sudo apt install tree -y
 # 開発ツール一式とGCCをインストール（コンパイラとビルドツール）
 sudo apt install build-essential -y
+# Docker
+sudo snap install docker 
 
 # Node <https://nodejs.org/ja/download>
 # nvmをダウンロードしてインストールする：
