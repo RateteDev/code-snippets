@@ -106,6 +106,8 @@ winget install -e --id XPFCC4CD725961
 winget install -e --id=Docker.DockerCLI
 # LiveSplit
 winget install -e --id=LiveSplit.LiveSplit
+# VScode
+winget install -e --id=Microsoft.VisualStudioCode
 ```
 
 ### 管理者権限ナシで実行
