@@ -108,6 +108,8 @@ winget install -e --id=Docker.DockerCLI
 winget install -e --id=LiveSplit.LiveSplit
 # VScode
 winget install -e --id=Microsoft.VisualStudioCode
+# LM Studio
+winget install -e --id=ElementLabs.LMStudio
 ```
 
 ### 管理者権限ナシで実行
