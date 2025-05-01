@@ -112,6 +112,8 @@ winget install -e --id=Microsoft.VisualStudioCode
 winget install -e --id=ElementLabs.LMStudio
 # Figma
 winget install -e --id=Figma.Figma
+# Zoom
+winget install -e --id Zoom.Zoom
 ```
 
 ### 管理者権限ナシで実行
