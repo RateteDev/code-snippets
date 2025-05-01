@@ -110,6 +110,8 @@ winget install -e --id=LiveSplit.LiveSplit
 winget install -e --id=Microsoft.VisualStudioCode
 # LM Studio
 winget install -e --id=ElementLabs.LMStudio
+# Figma
+winget install -e --id=Figma.Figma
 ```
 
 ### 管理者権限ナシで実行
