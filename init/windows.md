@@ -114,6 +114,8 @@ winget install -e --id=ElementLabs.LMStudio
 winget install -e --id=Figma.Figma
 # Zoom
 winget install -e --id Zoom.Zoom
+# VALORANT
+winget install -e --id=RiotGames.Valorant.AP
 ```
 
 ### 管理者権限ナシで実行
