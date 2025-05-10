@@ -12,7 +12,7 @@ sudo apt autoremove -y && sudo apt clean
 # Directory Setup
 # = = = = = = = = = =
 # 開発用のディレクトリを作成
-mkdir -p ~/workspace/Project ~/workspace/Handson
+mkdir -p ~/workspace/repo
 
 # = = = = = = = = = =
 # Install
