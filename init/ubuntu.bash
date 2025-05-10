@@ -14,6 +14,31 @@ sudo apt autoremove -y && sudo apt clean
 # 開発用のディレクトリを作成
 mkdir -p ~/workspace/repo
 
+# .env
+touch ~/workspace/.env
+
+# write script about reading .custom_bashrc > .bashrc
+cat >> "$HOME/.bashrc" << 'EOF'
+
+# Load custom workspace bash settings
+if [ -f "$HOME/workspace/.custom_bashrc" ]; then
+    source "$HOME/workspace/.custom_bashrc"
+fi
+EOF
+
+# create .custom_bashrc
+cat > "$HOME/workspace/.custom_bashrc" << 'EOF'
+# load ~/workspace/.env 
+if [ -f "$HOME/workspace/.env" ]; then
+  export $(grep -v '^#' "$HOME/workspace/.env" | xargs)
+fi
+
+# move repo directory 
+if [[ -z "$TERM_PROGRAM" || "$TERM_PROGRAM" != "vscode" ]]; then
+  cd /home/user/workspace/repo
+fi
+EOF
+
 # = = = = = = = = = =
 # Install
 # = = = = = = = = = =
