@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # = = = = = = = = = =
 # System Update
 # = = = = = = = = = =
@@ -28,14 +27,16 @@ EOF
 
 # create .custom_bashrc
 cat > "$HOME/workspace/.custom_bashrc" << 'EOF'
-# load ~/workspace/.env 
-if [ -f "$HOME/workspace/.env" ]; then
-  export $(grep -v '^#' "$HOME/workspace/.env" | xargs)
-fi
-
-# move repo directory 
+# move repo directory
 if [[ -z "$TERM_PROGRAM" || "$TERM_PROGRAM" != "vscode" ]]; then
   cd /home/user/workspace/repo
+fi
+
+# load ~/workspace/.env
+if [ -f "$HOME/workspace/.env" ]; then
+  set -a
+  source "$HOME/workspace/.env"
+  set +a
 fi
 EOF
 
