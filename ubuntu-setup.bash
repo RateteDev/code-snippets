@@ -9,6 +9,7 @@ curl -fsSL https://bun.sh/install | bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 curl -fsSL https://get.docker.com | sh
 sudo snap install ngrok
+sudo snap install code --classic
 
 # node(nvm) <https://nodejs.org/ja/download>
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -44,3 +45,7 @@ EOF
 # git settings
 git config --global user.name RateteDev
 git config --global user.email 105982649+RateteDev@users.noreply.github.com
+
+# discord
+sudo snap install discord steam
+
