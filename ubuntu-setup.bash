@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# パッケージリストの更新とパッケージのアップデート
+# apt package
 sudo apt update -y && sudo apt upgrade -y
 
-# 開発系
+# development
 sudo apt install -y git gh unzip tree build-essential ffmpeg golang-go
 curl -fsSL https://bun.sh/install | bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
