@@ -40,3 +40,7 @@ if [ -f "$HOME/workspace/.env" ]; then
   set +a
 fi
 EOF
+
+# git settings
+git config --global user.name RateteDev
+git config --global user.email 105982649+RateteDev@users.noreply.github.com
