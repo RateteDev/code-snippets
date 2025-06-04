@@ -10,6 +10,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 curl -fsSL https://get.docker.com | sh
 sudo snap install ngrok
 sudo snap install code --classic
+sudo snap install 1password
 
 # node(nvm) <https://nodejs.org/ja/download>
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
