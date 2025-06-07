@@ -116,8 +116,6 @@ winget install -e --id=Figma.Figma
 winget install -e --id Zoom.Zoom
 # VALORANT
 winget install -e --id=RiotGames.Valorant.AP
-# GeForceExperience
-winget install -e --id Nvidia.GeForceExperience
 ```
 
 ### 管理者権限ナシで実行
